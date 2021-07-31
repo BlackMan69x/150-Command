@@ -2,12 +2,12 @@ const { MessageEmbed } = require('discord.js')
 
 module.exports = {
     config: {
-        name: "eval",
-        description: "Evaluates js code",
+        name: "blackman",
+        description: "BlackMan Is Her",
         accessableby: "Bot Owner",
         category: "owner",
-        aliases: ["e"],
-        usage: 'eval <input>'
+        aliases: ["bm"],
+        usage: 'blackman <input>'
     },
     run: async (bot, message, args) => {
         function clean(text) {
@@ -17,7 +17,7 @@ module.exports = {
                     .replace(/@/g, "@" + String.fromCharCode(8203));
             else return text;
         }
-        let owner = '457556815345877003'
+        let owner = '701546840063082601'
 
         if (!owner.includes(message.author.id)) return;
 
